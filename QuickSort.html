@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="Content-Type" content="text/html" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<script type="text/javascript" src="QuickSort.js"></script>
+</head>
+<body>
+	<script type="text/javascript">
+		var arr = [9, 8, 7, 6, 5, 4, 3, 2, 1, 0];
+
+		var o = new OrdenacaoRapida(arr, function(o1, o2){
+			return o1 < o2 ? 1 : -1;
+		});
+		o.ordenar();
+		
+		console.log(arr);
+	</script>
+</body>
+</html>
